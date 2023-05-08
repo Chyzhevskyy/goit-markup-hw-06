@@ -603,7 +603,7 @@ header {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
+
 }
 
 .footer-social-svg {
@@ -663,6 +663,89 @@ footer {
     text-align: center;
 }
 
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+
+}
+
+.footer-form input {
+    display: flex;
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border-color: var(--white);
+    background-color: transparent;
+    color: var(--white);
+}
+
+.footer-form-sub {
+    display: flex;
+    padding-right: 190px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    margin-bottom: 16px;
+
+}
+
+.subscribe-btn {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+
+}
+
+
+
+.footer-form-button {
+    position: relative;
+    margin-left: 24px;
+    width: 165px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: var(--iris);
+    border: none;
+    top: 48px;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    padding-left: 24px;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-button:hover,
+.footer-form-button:focus {
+    background-color: var(--ocean);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button-icon {
+    position: absolute;
+    transform: translateY(-50%);
+    margin-left: 16px;
+}
+
 /* Modal window */
 .backdrop {
     position: fixed;
@@ -676,7 +759,7 @@ footer {
     transition-property: opacity, visibiliti;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
+
 }
 
 .modal {
@@ -724,7 +807,7 @@ footer {
     pointer-events: none;
 }
 
-.feedbak {}
+/* form */
 
 .form {
     display: flex;
@@ -734,6 +817,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     color: #2e2f42;
+    fill: var(--navy-blue-modal);
 }
 
 
@@ -751,10 +835,6 @@ footer {
     color: #2E2F42;
 }
 
-.icon-form {
-    position: absolute;
-}
-
 .modal-form {
     display: flex;
     font-family: 'Roboto';
@@ -766,15 +846,43 @@ footer {
     color: #8E8F99;
     border-radius: 4px;
     padding: 4px;
+    position: relative;
 
 }
+
+.form input:focus {
+    outline: none;
+    border: solid 1px;
+    border-color: var(--iris);
+
+
+}
+
+.icon-form {
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    width: 12px;
+    height: 12px;
+    left: 19px;
+    fill: currentColor;
+}
+
+
+
+
 
 .form input {
     display: flex;
     width: 360px;
     height: 40px;
     border-radius: 4px;
+    padding-left: 38px;
     border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.form input:focus+.icon-form {
+    fill: var(--iris);
 }
 
 .textr-comment {
@@ -804,6 +912,13 @@ footer {
     position: absolute;
 }
 
+.textr-comment:focus {
+    outline: none;
+    border: solid 1px;
+    border-color: var(--iris);
+}
+
+
 .policy {
     position: relative;
 
@@ -819,7 +934,6 @@ footer {
 }
 
 .link-policy {
-    margin-left: 4px;
     color: var(--iris);
 }
 
@@ -827,7 +941,11 @@ footer {
     display: flex;
     justify-content: center;
     margin: 24px 120px 24px 120px;
+    border: none;
 
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-button {
@@ -837,6 +955,18 @@ footer {
     color: var(--white);
     background-color: var(--iris);
     justify-content: center;
+    border: none;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.form-button:hover,
+.form-button:focus {
+    background-color: var(--ocean);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 }
 
