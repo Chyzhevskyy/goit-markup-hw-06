@@ -399,19 +399,21 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-form">
-                <label class="footer-form-sub" for="Subscribe">Subscribe</label>
-                <input type="text" name="Subscribe" id="Subscribe" placeholder="E-mail">
-            </div>
-            <div class="subscribe-btn">
-                <button class="footer-form-button" type="submit"> <span> Subscribe</span>
-                    <span> <svg class="button-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
+            <div>
+                <p class="footer-form-sub">Subscribe</p>
+                <form class="footer-form">
+                    <label for="Subscribe"></label>
+                    <input type="text" name="Subscribe" id="Subscribe" placeholder="E-mail">
+                    <button class="footer-form-button" type="submit"> Subscribe
+                        <svg class="button-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M24 0L0 11.25L7.66994 13.6172L19.5 4.375L10.5017 14.4913L10.509 14.4936L10.5 14.4913V20L14.8013 15.8183L20.2501 17.5L24 0Z"
                                 fill="white" />
-                        </svg> </span>
-                </button>
+                        </svg>
+                    </button>
+
+                </form>
             </div>
 
 
@@ -427,10 +429,8 @@
                     <use href="./images/icons.svg#icon-close-modal"></use>
                 </svg>
             </button>
-            <form class="feedbak">
-                <div class="modal-title-lable">
-                    <p class="modal-title">Leave your contacts and we will call you back</p>
-                </div>
+            <p class="modal-title">Leave your contacts and we will call you back</p>
+            <form>
                 <div class="form">
                     <label class="modal-form" for="name">Name</label>
                     <input type="text" name="name" id="name" />
@@ -440,6 +440,8 @@
                             d="M6 6C7.6575 6 9 4.6575 9 3C9 1.3425 7.6575 0 6 0C4.3425 0 3 1.3425 3 3C3 4.6575 4.3425 6 6 6ZM6 7.5C3.9975 7.5 0 8.505 0 10.5V11.25C0 11.6625 0.3375 12 0.75 12H11.25C11.6625 12 12 11.6625 12 11.25V10.5C12 8.505 8.0025 7.5 6 7.5Z"
                             fill="current" />
                     </svg>
+
+
 
                 </div>
                 <div class="form">
@@ -468,8 +470,8 @@
                     <label class="modal-form" for="comment">comment</label>
                     <textarea class="textr-comment" name="comment" id="comment" placeholder="Text input"></textarea>
                 </div>
-                <div class="form policy">
-                    <input type="checkbox" name="policy" id="policy">
+                <div class="policy">
+                    <input class="chek" type="checkbox" name="policy" id="policy">
                     <label class="modal-form accept" for="policy">I accept the terms and conditions of the
                         <span>&nbsp;<a class="link-policy" href=""> Privacy Policy </a></span></label>
                 </div>
