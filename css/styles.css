@@ -674,7 +674,7 @@ footer {
     align-items: center;
     justify-content: center;
     align-items: center;
-    margin-left: 80px;
+
 
 }
 
@@ -703,7 +703,6 @@ footer {
 
 .footer-form-sub {
     display: flex;
-    margin-left: 80px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -711,7 +710,7 @@ footer {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--white);
-    margin-bottom: 16px;
+    padding-bottom: 16px;
 }
 
 .subscribe-btn {
@@ -721,6 +720,9 @@ footer {
 
 }
 
+.Subscribe {
+    margin-left: 80px;
+}
 
 
 .footer-form-button {
@@ -829,17 +831,15 @@ footer {
     flex-direction: column;
     position: relative;
     width: 360px;
-    margin-left: auto;
-    margin-right: auto;
     color: #2e2f42;
     fill: var(--navy-blue-modal);
-    margin-bottom: 8px;
+    padding-bottom: 8px;
 }
 
 
 .modal-title {
     text-align: center;
-    padding: 72px 24px 16px 24px;
+    margin-bottom: 16px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -859,33 +859,26 @@ footer {
     letter-spacing: 0.01em;
     color: #8E8F99;
     border-radius: 4px;
-    margin-bottom: 4px;
+    padding-bottom: 4px;
+}
 
-
-
-
-
+.modal {
+    padding: 72px 24px 24px 24px;
 }
 
 .form input:focus {
     outline: none;
     border: solid 1px;
     border-color: var(--iris);
-
-
 }
 
 .icon-form {
     position: absolute;
-    top: 65%;
+    top: 55%;
     transform: translateY(-50%);
     left: 19px;
     fill: currentColor;
 }
-
-
-
-
 
 .form input {
     display: flex;
@@ -962,21 +955,20 @@ footer {
 .policy {
     display: flex;
     align-items: center;
-    margin-top: 16px;
-    margin-left: 24px;
+    padding-top: 16px;
     gap: 8px;
 }
 
 .accept {
     display: inline-block;
-    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .button-submit {
     display: flex;
-    margin: 24px 120px 24px 120px;
+    justify-content: center;
     border: none;
-
+    margin-top: 24px;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
